@@ -1,0 +1,45 @@
+.parenty
+{
+    /* border: 2px solid green; */
+    height: 80vh;
+    margin-left: 10%;
+    margin-right: 10%;
+   
+
+}
+#Line1
+{
+    margin-top: 10px;
+    color: #802BB1;
+    font-weight: bold;
+    margin-bottom: -10px;
+    font-size: 150%;
+}
+#Line2
+{
+    margin-top: 40px;
+   color:#CCD6F6;
+   font-weight: bolder;
+   font-size: 500%;
+   margin-bottom: -60px;
+}
+#Line3
+{
+    font-weight: bold;  
+  color:#8892B0;
+  font-size: 450%;
+  
+}
+#Line4
+{
+  color:#F2FFFF;
+  font-size: 110%;
+  margin-right: 50%;
+  
+}
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  

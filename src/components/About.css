@@ -1,0 +1,39 @@
+.parent2
+{
+    height: 500px;
+    width: 90%;
+    /* border: 2px solid red; */
+    padding-top: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.name2
+{
+    height: 70px;
+    /* border: 2px solid blue; */
+    display: flex;
+    font-size: 300%;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color:#D1D7E0;
+    background-color: #2C263B;
+    
+}
+hr{
+    height: 3px;
+    width: 30%;
+    margin-left: 20px;
+    background-color: #564F70;
+    border: 0px;
+    border-radius: 5px;
+    margin-top: auto;
+}
+.MyDesc
+{
+    /* border: 2px solid red; */
+    color: white;
+    margin-right: 40%;
+    font-size: 150%;
+    margin-top: 50px;
+}
