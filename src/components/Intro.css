@@ -1,11 +1,15 @@
 .parenty
 {
-    /* border: 2px solid green; */
-    height: 80vh;
+    border: 2px solid green;
+    height: 40em;
     margin-left: 10%;
     margin-right: 10%;
-   
+   overflow:auto;
 
+}
+.example::-webkit-scrollbar {
+  display: hidden;
+ 
 }
 #Line1
 {
@@ -13,27 +17,27 @@
     color: #802BB1;
     font-weight: bold;
     margin-bottom: -10px;
-    font-size: 150%;
+    font-size: 2em;
 }
 #Line2
 {
     margin-top: 40px;
    color:#CCD6F6;
    font-weight: bolder;
-   font-size: 500%;
+   font-size: 5em;
    margin-bottom: -60px;
 }
 #Line3
 {
     font-weight: bold;  
   color:#8892B0;
-  font-size: 450%;
+  font-size: 5em;
   
 }
 #Line4
 {
   color:#F2FFFF;
-  font-size: 110%;
+  font-size: 1.5em;
   margin-right: 50%;
   
 }

@@ -1,8 +1,8 @@
 .parent2
 {
-    height: 500px;
+    height: auto;
     width: 90%;
-    /* border: 2px solid red; */
+    border: 2px solid blue;
     padding-top: auto;
     margin-left: 10%;
     margin-right: 10%;
@@ -12,7 +12,7 @@
     height: 70px;
     /* border: 2px solid blue; */
     display: flex;
-    font-size: 300%;
+    font-size: 3em;
     justify-content: center;
     align-items: center;
     font-weight: bolder;
@@ -22,8 +22,9 @@
 }
 hr{
     height: 3px;
-    width: 30%;
-    margin-left: 20px;
+    width: 25%;
+    /* margin-left:5%; */
+    margin-right:55%;
     background-color: #564F70;
     border: 0px;
     border-radius: 5px;

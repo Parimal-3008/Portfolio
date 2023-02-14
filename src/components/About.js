@@ -4,6 +4,7 @@ function About() {
   return (
     <div className="parent2">
     <div className='name2'>
+    {/* <hr /> */}
     About Me
     <hr />
     </div>

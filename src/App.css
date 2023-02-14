@@ -9,10 +9,17 @@ html{
   background-color: #2C263B;
 }
 
-.child2
+.child2 
 {
   margin-top: 20vh;
-
+}
+.child3
+{
+  margin-top: 10vh;
+}
+.child4
+{
+  margin-top: 10vh;
 }
 @media screen and (max-width: 750px)
 {
