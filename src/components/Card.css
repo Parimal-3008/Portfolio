@@ -6,6 +6,7 @@
     margin-bottom: 20px;
     height: 300px;
     /* position: absolute; */
+    transition: all 0.2s ease-in;
 }
 
 .cardTitle
@@ -20,14 +21,23 @@
     justify-content:space-between;
     /* border: 2px solid pink; */
 }
+.cardgithublogo{
+    max-width: 100%;
+    height: auto;
+}
+.cardName
+{
+    font-size: 0.8em;
+}
+
 .cardTechStack
 {
     /* border: 2px solid brown; */
     height: 15%;
-    font-size: 0.7em;
+    font-size: 70%;
     font-style: italic;
-  /* text-align: center; */
-    display: flex;
+    word-wrap: break-word;
+   display: flex;
     overflow: auto;
     align-items: center;
     justify-content: center;
@@ -35,14 +45,17 @@
 .cardDescription
 {
     display: flex;
+    overflow: auto;
+    height: 58%;
     vertical-align: middle;
 }
 .carddesc
 {
-    font-size: 0.9em;
+    font-size: 0.8em;
     text-align: center;
+    overflow: auto;  
     margin-top: 5%;
-    /* overflow: auto;     */
+    /* height:30px;   */
 }
 .cardparent1:hover
 {
@@ -51,4 +64,42 @@
     top: -4px;
     transform: scale(1.1);
     z-index: 0;
+}
+@media screen and (max-width: 1000px)
+{
+    .cardTechStack
+    {
+        font-size: 70%;
+    }
+}
+@media screen and (max-width: 270px)
+{
+    .cardTitle
+    {
+        font-size: 70%;
+        height: 20%;
+    }
+    .githublogo
+    {
+        width: 70%;
+        height: 70%;
+    }
+    .cardTechStack
+    {
+       display: block;
+       overflow: auto;
+       font-size: 50%;
+       height: 20%;
+    }
+    .carddesc
+    {
+       font-size: 70%;
+       top: auto;
+       margin-top: 5%;
+       /* display: flex; 
+        align-items: center;
+       vertical-align: middle; */
+      
+    }
+
 }

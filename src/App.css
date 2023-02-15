@@ -21,10 +21,14 @@ html{
 {
   margin-top: 10vh;
 }
-@media screen and (max-width: 750px)
+.child5
+{
+  margin-top: 10vh;
+}
+/* @media screen and (max-width: 750px)
 {
   .child2
   {
     margin-top: 173px;
   }
-}
+} */

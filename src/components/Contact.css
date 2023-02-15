@@ -1,0 +1,108 @@
+.contactparent1
+{
+    border: 2px solid brown;
+    height: auto;
+    width: 80%;
+   margin-top: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.contactname2
+{
+    height: 70px;
+    /* border: 2px solid blue; */
+    display: flex;
+    font-size: 300%;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color:#D1D7E0;
+    background-color: #2C263B;
+    
+}
+.contactform
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+#sendername, #sendermail 
+{
+    background-color: #2B2B2B;
+    text-align: center;
+    border: 0px #2B2B2B;
+    outline:#2B2B2B;
+    height: 50px;
+    margin-top: 30px;
+    color: white;
+    font-size: 100%;
+    transition: all 0.2s ease-in;
+}
+#sendermessage
+{
+   
+    word-wrap: break-word;
+    background-color: #2B2B2B;
+    border: 0px #2B2B2B;
+    outline:#2B2B2B;
+    height: 50px;    
+    font-family: 'Helvetica', Arial, Lucida Grande, sans-serif;
+    text-align: left;
+    margin-top: 30px;
+    color: white;
+    font-size: 100%;
+    padding: 2% ;
+    transition: all 0.4s ease-in;
+}
+#sendername:focus, #sendermail:focus, #sendermessage:focus
+{
+   border-bottom: 2px solid red;
+   transition: 0.5s ease-in;
+}
+.contactsendmsg
+{
+    margin-top: 30px;
+    width:175px;
+    height:50px;
+    font-family: 'Helvetica', Arial, Lucida Grande, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #D1D7E0;
+    border: 0px ;
+    font-size: 90%;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.5s ease-out;
+}
+.contactsendmsg:hover
+{
+   background-color:aliceblue;
+   cursor: pointer;
+   color: red;
+   /* border: 1px solid red; */
+   transition: all 0.3s ease-in;
+   
+}
+.contactsendmsg:not(:hover) {
+    background-color: #4CAF50; /* Set the background color back to the initial color */
+    transition: all 0.3s ease-in;
+  }
+#contactbuttondiv
+{
+    display: flex;
+    justify-content: flex-end;
+}
+@media screen and (max-width: 250px)
+{
+    input
+    {
+        font-size: 70%;
+    }
+    .contactsendmsg
+    {
+        width: 80%;
+        font-size: 80%;
+    }
+    
+}

@@ -8,10 +8,10 @@ function Card() {
         <div className='cardName'>
             StockX
         </div>
-        <div className='cardgithublogo'><img src={logo}  /></div>
+        <div className='cardgithublogo'><img className='githublogo' src={logo}  /></div>
     </div>
     <div className='cardTechStack'>
-      Node.js,Express.js,React.js,PostgreSQL
+      Node.js Express.js React.js PostgreSQL
     </div>
     <div className='cardDescription'>
     <div className='carddesc'>Playground for newbie stock traders to buy and sell some of the listed stocks at live price.</div>
