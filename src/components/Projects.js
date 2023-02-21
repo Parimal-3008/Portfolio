@@ -16,7 +16,7 @@ const  Projects=  React.forwardRef((props, ref) => {
      <Card projectname="WeText" url="https://github.com/Parimal-3008/WeText" techstack="Node.js Express.js EJS MongoDB" 
      description="Web application where user can can chat in real time with each other."
       />
-     <Card projectname="Portfolio" url="https://github.com/Parimal-3008/StockX" techstack="Node.js React.js" 
+     <Card projectname="Portfolio" url="https://github.com/Parimal-3008/Portfolio" techstack="Node.js React.js" 
      description="My portfolio website to showcase my skills and projects."
       />
      <Card projectname="Chess Clock" url="https://github.com/Parimal-3008/chess-clock" techstack="HTML CSS Javascript" 
