@@ -1,6 +1,28 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import "../components/css/Contact.css";
 const  Contact=  React.forwardRef((props, ref) => {
+  const formRef = useRef(null);
+
+  const scriptUrl = "https://script.google.com/macros/s/AKfycbyRc12rwnXH04D5I50xwH9eDJqwwVLk83sq9DqlPYv10vbnDdC9iO4-2yt13qkS8N-v/exec"
+
+  const handleclick = (e) =>{
+      e.preventDefault()
+
+      fetch(scriptUrl, {method: 'POST', body: new FormData(formRef.current)})
+      .then(res => {
+        alert("Message sent!!!");
+        document.getElementById('sendername').value="";
+        document.getElementById('sendermail').value="";
+        document.getElementById('sendermessage').value="";
+        
+          console.log("SUCCESSFULLY SUBMITTED")
+      })
+      .catch(err => console.log(err))
+  }
+  
+
+
+
   return (
     <div className='contactparent1' ref={ref}>
     <div className='contactname2'>
@@ -8,16 +30,12 @@ const  Contact=  React.forwardRef((props, ref) => {
     Contact me
     <hr className='projecthr' />
     </div>
-    <div className='contactform'>
-    <input type='text' id='sendername' placeholder='Enter your name'/>
-    <input type='email' id='sendermail' placeholder='Enter your e-mail address'/>
-    <textarea rows='1' id='sendermessage' placeholder='Write your message...' />    
-    <div id='contactbuttondiv'><button className='contactsendmsg'>Send </button></div>
-    
-
-    </div>
-
-
+    <form method='POST' ref={formRef} className='contactform' name='google-sheet' onSubmit={handleclick}>
+    <input type='text' name='Name' id='sendername' placeholder='Enter your name' required/>
+    <input type='email' name='Email' id='sendermail' placeholder='Enter your e-mail address' required/>
+    <textarea rows='1' name='Message' id='sendermessage' placeholder='Write your message...' required />    
+    <div id='contactbuttondiv'><button className='contactsendmsg' onClick={ handleclick}>Send </button></div>
+    </form>
     </div>
   )
 });

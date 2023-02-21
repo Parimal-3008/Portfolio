@@ -9,7 +9,7 @@ const  Footer=  React.forwardRef((props, ref) => {
     <div ref={ref} >
     <div className='footerparent1'>
     <div>© 2023 Parimal</div>
-    <div>Designed and build by Parimal</div>
+    <div>Build by Parimal</div>
     <div>Lets be friends</div>
     </div>
     <div className='footerlogos'>
