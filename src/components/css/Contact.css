@@ -1,6 +1,6 @@
 .contactparent1
 {
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
     height: auto;
     width: 80%;
    margin-top: auto;
@@ -23,8 +23,7 @@
 .contactform
 {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
 #sendername, #sendermail 
 {
@@ -56,7 +55,7 @@
 }
 #sendername:focus, #sendermail:focus, #sendermessage:focus
 {
-   border-bottom: 2px solid red;
+   border-bottom: 2px solid #FFC857;
    transition: 0.5s ease-in;
 }
 .contactsendmsg
@@ -67,26 +66,26 @@
     font-family: 'Helvetica', Arial, Lucida Grande, sans-serif;
     display: flex;
     justify-content: center;
-    background-color: #D1D7E0;
+    background-color: #FFC857;
     border: 0px ;
     font-size: 90%;
     font-weight: bolder;
     text-align: center;
     line-height: 50px;
-    transition: all 0.5s ease-out;
+    transition: all 0.2s ease-out;
 }
 .contactsendmsg:hover
 {
-   background-color:aliceblue;
+   background-color:#FFC857 ;
    cursor: pointer;
-   color: red;
+   color: black;
    /* border: 1px solid red; */
-   transition: all 0.3s ease-in;
+   transition: all 0.2s ease-in;
    
 }
 .contactsendmsg:not(:hover) {
-    background-color: #4CAF50; /* Set the background color back to the initial color */
-    transition: all 0.3s ease-in;
+    background-color: #FFC857; 
+    transition: all 0.2s ease-in;
   }
 #contactbuttondiv
 {
@@ -104,5 +103,31 @@
         width: 80%;
         font-size: 80%;
     }
+    #sendername
+    {
+        margin-top:10% ;
+    }
     
+}
+@media screen and (max-width: 500px)
+{
+    .projecthr
+    {
+        width: 0px;
+        height: 0px;;
+    }
+    .contactparent1
+    {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .projecthr
+    {
+        height: 0px;
+        width:0px;
+    }
+    #sendername
+    {
+        margin-top: 10%;
+    }
 }

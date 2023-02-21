@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from "react";
-import "./Intro.css";
+import "../components/css/Intro.css";
 
-function Intro() {
+const  Intro=  React.forwardRef((props, ref) => {
   let str1 = "Hi, my name is";
   let str2 = "Parimal Yeole.";
   let str3="I build things for web."
@@ -31,22 +31,25 @@ function Intro() {
         setText3( line3 + str3[index-str1.length-str2.length]);
         setIndex( index + 1);
       }
-      else if(index-str1.length-str2.length-str3.length<str4.length)
+      else if(index-str1.length-str2.length-str3.length<str4.length )
       {
           settimer(30);
+          if(window.innerWidth>1050)
           setText4( line4 + str4[index-str1.length-str2.length-str3.length]);
           setIndex( index + 1);
         
       }
       else
       {
+        
+        
           setText2("  ");
           setText3("  ");
           setText4("  ");
         setIndex(1);
         settimer(50);
         setText1("H"); 
-
+        
       }
     }, timer);
     return () => clearInterval(interval);
@@ -56,13 +59,13 @@ function Intro() {
   
   
   return (
-    <div className="parenty">
+    <div className="parenty" ref={ref}>
       <p id="Line1">{line1}</p>
       <p id="Line2">{line2}</p>
       <p id="Line3">{line3}</p>
       <p id="Line4">{line4}</p>
     </div>
   );
-}
+});
 
 export default Intro;

@@ -1,8 +1,8 @@
 import React from 'react'
-import "../components/Contact.css"
-function Contact() {
+import "../components/css/Contact.css";
+const  Contact=  React.forwardRef((props, ref) => {
   return (
-    <div className='contactparent1'>
+    <div className='contactparent1' ref={ref}>
     <div className='contactname2'>
     <hr className='projecthr' />
     Contact me
@@ -20,6 +20,6 @@ function Contact() {
 
     </div>
   )
-}
+});
 
 export default Contact

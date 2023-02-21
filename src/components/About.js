@@ -1,12 +1,13 @@
 import React from 'react'
-import '../components/About.css'
-function About() {
+import '../components/css/About.css'
+
+const  About=  React.forwardRef((props, ref) => {
   return (
-    <div className="parent2">
+    <div className="parent2" ref={ref}>
     <div className='name2'>
-    {/* <hr /> */}
+    <hr className='projecthr'/>
     About Me
-    <hr />
+    <hr className='projecthr' />
     </div>
     <div className='MyDesc'>
       <p>Hello! I am Parimal in my final year of engineering.</p>
@@ -26,6 +27,6 @@ function About() {
 
     </div>
   )
-}
+});
 
 export default About

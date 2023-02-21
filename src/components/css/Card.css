@@ -1,7 +1,7 @@
 .cardparent1
 {
    border-radius: 1.5em;
-    border: 2px solid white;
+    border: 1px solid #FFC857;
     margin-top: 20px;
     margin-bottom: 20px;
     height: 300px;
@@ -18,18 +18,34 @@
     font-weight: bolder;
     display: flex;
     align-items: center;
+    color: #ffd073;
     justify-content:space-between;
     /* border: 2px solid pink; */
 }
 .cardgithublogo{
     max-width: 100%;
-    height: auto;
+}
+.cardgithublogo:hover
+{
+    cursor: pointer;
+}
+.githublogo
+{
+    height: 47px;
+    border-radius: 100%;
 }
 .cardName
 {
     font-size: 0.8em;
 }
-
+@media screen and (max-width: 500px)
+{
+    .cardparent1
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
 .cardTechStack
 {
     /* border: 2px solid brown; */
@@ -38,6 +54,7 @@
     font-style: italic;
     word-wrap: break-word;
    display: flex;
+   color: #f1d7a3;
     overflow: auto;
     align-items: center;
     justify-content: center;
@@ -55,12 +72,13 @@
     text-align: center;
     overflow: auto;  
     margin-top: 5%;
+    color: #D0D7E1;
     /* height:30px;   */
 }
 .cardparent1:hover
 {
     transition: all 0.2s ease-out;
-    box-shadow: 0px 8px 16px rgba(242, 238, 238, 0.826);
+    box-shadow: 0px 4px 8px rgba(250, 225, 168, 0.953);
     top: -4px;
     transform: scale(1.1);
     z-index: 0;

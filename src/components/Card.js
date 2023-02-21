@@ -1,20 +1,24 @@
 import React from 'react'
-import "./Card.css";
-import logo from './icons8-github-48.svg';
-function Card() {
+import "../components/css/Card.css";
+import logo from './icons/icons8-github.svg';
+function Card(props) {
   return (
     <div className='cardparent1'>
     <div className='cardTitle'>
         <div className='cardName'>
-            StockX
+            {props.projectname}
         </div>
-        <div className='cardgithublogo'><img className='githublogo' src={logo}  /></div>
+        <div className='cardgithublogo'><a target="_blank" href={props.url}><img className='githublogo' src={logo} /></a></div>
     </div>
     <div className='cardTechStack'>
-      Node.js Express.js React.js PostgreSQL
+    {props.techstack}
+      {/* Node.js Express.js React.js PostgreSQL */}
     </div>
     <div className='cardDescription'>
-    <div className='carddesc'>Playground for newbie stock traders to buy and sell some of the listed stocks at live price.</div>
+    <div className='carddesc'>
+    {/* Playground for newbie stock traders to buy and sell some of the listed stocks at live price. */}
+    {props.description}
+    </div>
         
     </div>
 

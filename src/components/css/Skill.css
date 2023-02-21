@@ -1,0 +1,64 @@
+.skillslogo2 {
+  height: 150px;
+  width: 150px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  border-radius: 10%;
+  transition: all 0.2s ease-out;
+}
+.skillslogo {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  margin-top: 50px;
+  /* border: 2px solid blue; */
+}
+.skillslogo2:hover {
+  scale: 1.05;
+  transition: all 0.2s ease-in;
+}
+@media screen and (min-width: 900px) {
+  .skillslogo {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 20% 20% 20% 20%;
+    margin-left: 10%;   
+    margin-right: 10%;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width: 900px) {
+  .skillslogo {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 33% 33% 33%;
+    margin-left: 10%;   
+    margin-right: 10%;
+    width: 80%;
+  }
+}
+@media screen and (min-width:330px) and (max-width: 600px) {
+  .skillslogo {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 50% 50%;
+    margin-left: 10%;   
+    margin-right: 10%;
+    width: 80%;
+  }
+}
+@media screen and (max-width:330px){
+  .skillslogo {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 80%;
+    margin-left: 10%;   
+    margin-right: 10%;
+    width: 100%;
+  }
+}
+

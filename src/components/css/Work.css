@@ -1,0 +1,161 @@
+.workparent {
+  /* border: 2px solid red; */
+  margin-top: 5%;
+  /* height: 80%;; */
+  height: 500px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.workhr {
+  height: 3px;
+  width: 24%;
+  margin-left: 0%;
+  margin-right: 0%;
+  background-color: #564f70;
+  border: 0px;
+  border-radius: 5px;
+  margin-top: auto;
+}
+.workname2 {
+  display: flex;
+  font-size: 300%;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  color: #d1d7e0;
+
+  background-color: #2c263b;
+}
+#leftline {
+  margin-right: 4%;
+}
+#rightline {
+  margin-left: 4%;
+}
+.workouterdiv {
+  display: flex;
+  margin-top: 60px;
+  /* border: 2px solid  brown; */
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 80%;
+}
+.workleft {
+  width: 20%;
+  /* border: 2px solid rgb(200, 21, 27); */
+  display: flex;
+  flex-direction: column;
+}
+.workright {
+  margin-left: 2%;
+  width: 80%;
+  /* border: 2px solid blue; */
+}
+.workrole {
+  height: 13%;
+  /* border: 1px solid green; */
+  color: #FFC857;
+  font-weight: 500;
+  display: flex;
+  font-size: 150%;
+  align-items: center;
+}
+.workduration {
+  height: 5%;
+  /* border: 1px solid red; */
+  color: #d1d7e0;
+  font-weight: 500;
+  display: flex;
+  font-size: 90%;
+  align-items: center;
+}
+.workdescription {
+  height: 80%;
+  overflow: auto;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  font-size: 100%;
+  align-items: center;
+  color: #9ea1a5;
+  overflow: auto;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+
+.workcompanyname {
+  height: 10%;
+  background-color: #2c263b;
+  text-align: center;
+  border: 0px;
+  font-weight: bold;
+  color: #d1d7e0;
+  border-left: 3px solid #493e62;
+  /* transition: all 0.1s ease-out; */
+}
+.workcompanyname:hover {
+  cursor: pointer;
+  background-color: #8e84a5;
+  color: ce83f9;
+  /* transition: all 0.01s ease-in; */
+}
+#button1 {
+  border-left: 3px solid #FFC857;
+  color: #FFC857;
+}
+li {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 1000px) {
+  .workouterdiv {
+    display: block;
+  }
+  .workleft {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    overflow: auto;
+    margin-bottom: 5%;
+  }
+  #button1 {
+    border-left: 0px;
+    border-bottom: 3px solid #FFC857;
+    color: #FFC857;
+  }
+  .workcompanyname
+  {
+    font-size: 110%;
+    border-left: 0px;
+    border-bottom: 3px solid #493e62;
+  }
+  .workdescription
+  {
+    width: 120%;
+    height: 200px;
+    overflow: auto;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+  }
+ 
+  
+}
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

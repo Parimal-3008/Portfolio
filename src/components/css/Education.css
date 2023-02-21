@@ -1,0 +1,111 @@
+.educationparent
+{
+    /* border: 2px solid red; */
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.educationparent2{
+    /* border: 2px solid blue; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height:150px;
+    display: flex;
+
+}
+.educationlogo
+{
+    /* border: 2px solid red; */
+    width: 100px;
+    height: 100px;
+    /* border-radius: 100%; */
+}
+.svnitlogo
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+}
+.educationouter
+{
+    margin-left: 20px;
+    align-items: center;
+}
+.institutionname
+{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    color: #D0D6E0;
+    font-size: 150%;
+    font-weight: 700;
+    /* margin-top: 5%; */
+    /* margin-bottom: 5%; */
+}
+.degree
+{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 100%;
+    color: #b3b9c2;
+    /* margin-top: 5%; */
+    
+}
+.duration
+{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    color:#777b81;
+    /* margin-top: 5%; */
+}
+@media screen and (max-width:1000px)
+{
+    .educationparent2{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10%;
+        height: 150px;
+    }
+    .institutionname, .degree, .duration
+    {
+        margin-top: 5%;
+    }
+}
+@media screen and (max-width:600px)
+{
+    .educationparent2{
+        width: 100%;
+        /* overflow: auto; */
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 200px;
+        margin-top: 50px;
+    }
+    .degree, .duration
+    {
+        margin-top: 5px;
+    }
+    .institutionname
+    {
+        margin-top: 5px;
+    }
+    .svnitlogo{
+        width: 0%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .educationlogo
+    {
+        width: 0%;
+    }
+    
+}
