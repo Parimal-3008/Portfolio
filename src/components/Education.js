@@ -17,7 +17,7 @@ const  Education=  React.forwardRef((props, ref) => {
       </div>      
       </div>
       <div className='educationparent2'>
-      <div className='educationlogo'><img className='svnitlogo' src='https://vndc.co.in/wp-content/uploads/2021/09/New-Project.png'/></div>
+      <div className='educationlogo'><img className='svnitlogo' src='https://www.static-contents.youth4work.com/university/Documents/Colleges/collegeLogo/20230113103439.png?v=20230113103439'/></div>
       <div className='educationouter'>
       <div className='institutionname'>Vidya Niketan Junior College, Ghatkopar(East), Mumbai</div>
       <div className='degree'>Higher Secondary Education  </div>
