@@ -92,6 +92,17 @@
     display: flex;
     justify-content: flex-end;
 }
+.loaderparent1
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    /* border: 2px solid blue; */
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (max-width: 250px)
 {
     input
