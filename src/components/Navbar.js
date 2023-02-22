@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import "../components/css/Navbar.css";
+import Menubar from './Menubar';
 const  Navbar=  React.forwardRef((props, ref) => {
   
   const [navactive,setnav]= useState(0);
@@ -36,7 +37,8 @@ const  Navbar=  React.forwardRef((props, ref) => {
             <button className='navbuttons' onClick={()=>{props.ref6.current.scrollIntoView({ behavior: 'smooth', block: 'start' });}}>Projects</button>
             <button className='navbuttons' onClick={()=>{props.ref7.current.scrollIntoView({ behavior: 'smooth', block: 'start' });}}>Education</button>
             <button className='navbuttons' onClick={()=>{props.ref8.current.scrollIntoView({ behavior: 'smooth', block: 'start' });}}>Contact</button>
-            <a href='https://drive.google.com/file/d/1sIbgol6vdVVYAG7npynhHHtzslpfayvS/view?usp=share_link' target='_blank'  rel="noreferrer"><button className='navbuttons'>Resume</button></a>
+           
+            <button className='navbuttons2'><Menubar /></button>
            </div>
            
             <br />
@@ -48,7 +50,7 @@ const  Navbar=  React.forwardRef((props, ref) => {
             <li className='listitems'><button className='listbuttons' onClick={()=>{props.ref6.current.scrollIntoView({ behavior: 'smooth', block: 'start' });list.style.display="none";setnav(0);list2.style.transition="all 0.2s ease-in";}}>Projects</button></li>
             <li className='listitems'><button className='listbuttons' onClick={()=>{props.ref7.current.scrollIntoView({ behavior: 'smooth', block: 'start' });list.style.display="none";setnav(0);list2.style.transition="all 0.2s ease-in";}}>Education</button></li>
             <li className='listitems'><button className='listbuttons' onClick={()=>{props.ref8.current.scrollIntoView({ behavior: 'smooth', block: 'start' });list.style.display="none";setnav(0);list2.style.transition="all 0.2s ease-in";}}>Contact</button></li>
-            <li className='listitems'><a href='https://drive.google.com/file/d/1sIbgol6vdVVYAG7npynhHHtzslpfayvS/view?usp=share_link' target='_blank'  rel="noreferrer"><button className='listbuttons'>Resume</button></a></li>
+            <li className='listitems'> <button className='navbuttons2' ><Menubar /></button></li>
             </ul>
             </div>
             <button type="button" className="nav-btn" id='nav-btn' onClick={()=> handleClick()}><svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" className="nav-icon" height="40px" width="40px" xmlns="http://www.w3.org/2000/svg">

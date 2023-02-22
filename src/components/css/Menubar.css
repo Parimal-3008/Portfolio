@@ -1,0 +1,24 @@
+#basic-button {
+  border: 0px;
+  background-color: #2c263b;
+  color: #ffd073;
+  margin-left: -5px;
+  margin-right: 10px;
+  font-size: 100%;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+#basic-button:hover {
+  cursor: pointer;
+  color: #fcbb39;
+  text-decoration: underline;
+}
+.Menuparent
+{
+  margin-left: 0%;
+
+}
+.anchortag {
+  text-decoration: none;
+  color: black;
+}

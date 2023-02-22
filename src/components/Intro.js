@@ -3,8 +3,8 @@ import "../components/css/Intro.css";
 
 const  Intro=  React.forwardRef((props, ref) => {
   let str1 = "Hi, my name is";
-  let str2 = "Parimal Yeole.";
-  let str3="I build things for web."
+  let str2 = "Parimal Yeole";
+  let str3="I build things for web!"
   let str4=" I am a fresh graduate aspiring to build innovational and exceptional products. I am currently working on learning new technologies and improving my problem solving skills.                              "
   let str=str1;
   const [line1,setText1]= useState("");
