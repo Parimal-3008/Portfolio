@@ -45,6 +45,6 @@ const  Contact=  React.forwardRef((props, ref) => {
     </form>
     </div>
   );
-});
+})
 
 export default Contact

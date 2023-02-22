@@ -8,7 +8,7 @@ function Card(props) {
         <div className='cardName'>
             {props.projectname}
         </div>
-        <div className='cardgithublogo'><a target="_blank" href={props.url}><img className='githublogo' src={logo} /></a></div>
+        <div className='cardgithublogo'><a target="_blank" href={props.url}  rel="noreferrer"><img className='githublogo' src={logo} alt=' ' /></a></div>
     </div>
     <div className='cardTechStack'>
     {props.techstack}

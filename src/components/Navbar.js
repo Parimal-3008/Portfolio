@@ -10,7 +10,7 @@ const  Navbar=  React.forwardRef((props, ref) => {
     const list3=document.getElementById("mobileparent");
     const list4=document.getElementById("nav-btn");
     console.log(navactive);
-    if(navactive==1)
+    if(navactive === 1)
     {
       setnav(0);
       list3.style.display="none";
@@ -36,7 +36,7 @@ const  Navbar=  React.forwardRef((props, ref) => {
             <button className='navbuttons' onClick={()=>{props.ref6.current.scrollIntoView({ behavior: 'smooth', block: 'start' });}}>Projects</button>
             <button className='navbuttons' onClick={()=>{props.ref7.current.scrollIntoView({ behavior: 'smooth', block: 'start' });}}>Education</button>
             <button className='navbuttons' onClick={()=>{props.ref8.current.scrollIntoView({ behavior: 'smooth', block: 'start' });}}>Contact</button>
-            <a href='https://drive.google.com/file/d/1sIbgol6vdVVYAG7npynhHHtzslpfayvS/view?usp=share_link' target='_blank'><button className='navbuttons'>Resume</button></a>
+            <a href='https://drive.google.com/file/d/1sIbgol6vdVVYAG7npynhHHtzslpfayvS/view?usp=share_link' target='_blank'  rel="noreferrer"><button className='navbuttons'>Resume</button></a>
            </div>
            
             <br />
@@ -48,7 +48,7 @@ const  Navbar=  React.forwardRef((props, ref) => {
             <li className='listitems'><button className='listbuttons' onClick={()=>{props.ref6.current.scrollIntoView({ behavior: 'smooth', block: 'start' });list.style.display="none";setnav(0);list2.style.transition="all 0.2s ease-in";}}>Projects</button></li>
             <li className='listitems'><button className='listbuttons' onClick={()=>{props.ref7.current.scrollIntoView({ behavior: 'smooth', block: 'start' });list.style.display="none";setnav(0);list2.style.transition="all 0.2s ease-in";}}>Education</button></li>
             <li className='listitems'><button className='listbuttons' onClick={()=>{props.ref8.current.scrollIntoView({ behavior: 'smooth', block: 'start' });list.style.display="none";setnav(0);list2.style.transition="all 0.2s ease-in";}}>Contact</button></li>
-            <li className='listitems'><a href='https://drive.google.com/file/d/1sIbgol6vdVVYAG7npynhHHtzslpfayvS/view?usp=share_link' target='_blank'><button className='listbuttons'>Resume</button></a></li>
+            <li className='listitems'><a href='https://drive.google.com/file/d/1sIbgol6vdVVYAG7npynhHHtzslpfayvS/view?usp=share_link' target='_blank'  rel="noreferrer"><button className='listbuttons'>Resume</button></a></li>
             </ul>
             </div>
             <button type="button" className="nav-btn" id='nav-btn' onClick={()=> handleClick()}><svg stroke="currentColor" fill="none" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" className="nav-icon" height="40px" width="40px" xmlns="http://www.w3.org/2000/svg">
