@@ -110,6 +110,7 @@ li {
 @media screen and (max-width: 1000px) {
   .workouterdiv {
     display: block;
+   
   }
   .workleft {
     flex-direction: row;
@@ -139,6 +140,22 @@ li {
   }
  
   
+}
+@media screen and (max-width: 700px) {
+  .workparent
+  {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+  .workouterdiv
+  {
+    /* border: 2px solid blue; */
+    width: 95%;
+    margin-right: 2.5%;
+    margin-left:2.5%;
+  }
+ 
 }
 ::-webkit-scrollbar {
     width: 3px;
