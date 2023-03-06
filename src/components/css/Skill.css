@@ -41,7 +41,7 @@
     width: 80%;
   }
 }
-@media screen and (min-width:330px) and (max-width: 600px) {
+@media screen and (min-width:400px) and (max-width: 600px) {
   .skillslogo {
     display: grid;
     justify-content: space-between;
@@ -51,7 +51,7 @@
     width: 80%;
   }
 }
-@media screen and (max-width:330px){
+@media screen and (max-width:400px){
   .skillslogo {
     display: grid;
     justify-content: space-between;
