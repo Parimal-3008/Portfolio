@@ -3,7 +3,7 @@ import "../components/css/Skillcard.css"
 
 function Skillcard(props) {
   const style = {  
-    width:'330px',
+    width:'300px',
     // height: 'auto'   
   };
  
