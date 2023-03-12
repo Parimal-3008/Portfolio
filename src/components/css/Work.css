@@ -42,6 +42,7 @@
 }
 .workleft {
   width: 20%;
+  text-decoration: none;
   /* border: 2px solid rgb(200, 21, 27); */
   display: flex;
   flex-direction: column;
@@ -95,8 +96,8 @@
 }
 .workcompanyname:hover {
   cursor: pointer;
-  background-color: #8e84a5;
-  color: ce83f9;
+  /* background-color: #8e84a5; */
+  color: #2C263B;
   /* transition: all 0.01s ease-in; */
 }
 #button1 {

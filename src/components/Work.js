@@ -28,25 +28,25 @@ const  Work=  React.forwardRef((props, ref) => {
     {
         let name2 = "button" + i;
        // console.log(i);
-       if(window.innerWidth>1000)
-       {
-         document.getElementById(name2).style.borderLeft = "#2C263B";
-        document.getElementById(name2).style.color = "#D1D7E0";
-        document.getElementById(name2).style.fontWeight="bold";
-        document.getElementById("button"+current).style.borderLeft = "3px solid #ce83f9";
-        document.getElementById("button"+current).style.color = "#ce83f9";
-        document.getElementById("button"+current).style.fontWeight="600";
-      }
-        else
-        {
-          document.getElementById(name2).style.borderBottom = "#2C263B";
-        document.getElementById(name2).style.color = "#D1D7E0";
-        document.getElementById(name2).style.fontWeight="bold";
-        document.getElementById("button"+current).style.borderBottom = "3px solid #ce83f9";
-        document.getElementById("button"+current).style.color = "#ce83f9";
-        document.getElementById("button"+current).style.fontWeight="600";
+      //  if(window.innerWidth>1000)
+      //  {
+      //    document.getElementById(name2).style.borderLeft = "#2C263B";
+      //   document.getElementById(name2).style.color = "#D1D7E0";
+      //   document.getElementById(name2).style.fontWeight="bold";
+      //   document.getElementById("button"+current).style.borderLeft = "3px solid #D1D7E0";
+      //   // document.getElementById("button"+current).style.color = "#D1D7E0";
+      //   // document.getElementById("button"+current).style.fontWeight="600";
+      // }
+      //   else
+      //   {
+      //     document.getElementById(name2).style.borderBottom = "#2C263B";
+      //   document.getElementById(name2).style.color = "#D1D7E0";
+      //   document.getElementById(name2).style.fontWeight="bold";
+      //   document.getElementById("button"+current).style.borderBottom = "3px solid #D1D7E0";
+      //   // document.getElementById("button"+current).style.color = "#D1D7E0";
+      //   // document.getElementById("button"+current).style.fontWeight="600";
 
-        }
+      //   }
     }
     let cnmae= document.getElementById(name).innerText;
     setrole(workdesc[cnmae]['Role']);
@@ -62,7 +62,7 @@ const  Work=  React.forwardRef((props, ref) => {
         <hr className="workhr" id="rightline" />
       </div>
       <div className="workouterdiv">
-        <div className="workleft">
+        <a className="workleft" href="https://drive.google.com/file/d/1NLuCkYZO-MT6bLLTEoyUhyb6XuVh7Hy0/view" target='_blank'  rel="noreferrer" >
           <button
             className="workcompanyname"
             id="button1"
@@ -98,7 +98,7 @@ const  Work=  React.forwardRef((props, ref) => {
           >
             Starry
           </button> */}
-        </div>
+        </a>
         <div className="workright">
           <div className="workrole">{role}</div>
           <div className="workduration">{Duration}</div>
