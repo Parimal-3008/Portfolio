@@ -1,4 +1,5 @@
 import React from 'react'
+import jrclg from "../components/icons/VidyaNiketan.jpeg" ;
 import "../components/css/Education.css"
 const  Education=  React.forwardRef((props, ref) => {
   return (
@@ -17,7 +18,7 @@ const  Education=  React.forwardRef((props, ref) => {
       </div>      
       </div>
       <div className='educationparent2'>
-      <div className='educationlogo'><img className='svnitlogo' src='https://www.static-contents.youth4work.com/university/Documents/Colleges/collegeLogo/20230113103439.png?v=20230113103439'/></div>
+      <div className='educationlogo'><img className='svnitlogo' src={jrclg} /></div>
       <div className='educationouter'>
       <div className='institutionname'>Vidya Niketan Junior College, Ghatkopar(East), Mumbai</div>
       <div className='degree'>Higher Secondary Education  </div>
