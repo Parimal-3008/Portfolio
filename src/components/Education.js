@@ -18,7 +18,7 @@ const  Education=  React.forwardRef((props, ref) => {
       </div>      
       </div>
       <div className='educationparent2'>
-      <div className='educationlogo'><img className='svnitlogo' src={jrclg} /></div>
+      <div className='educationlogo'><img className='svnitlogo' src={jrclg}/></div>
       <div className='educationouter'>
       <div className='institutionname'>Vidya Niketan Junior College, Ghatkopar(East), Mumbai</div>
       <div className='degree'>Higher Secondary Education  </div>
