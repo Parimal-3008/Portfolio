@@ -34,9 +34,9 @@ export default function Menubar() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <a className='anchortag' href='https://drive.google.com/file/d/1sIbgol6vdVVYAG7npynhHHtzslpfayvS/view?usp=share_link' target='_blank'  rel="noreferrer">
+        <a className='anchortag' target='_blank'  rel="noreferrer">
          <MenuItem onClick={()=>{
-            setAnchorEl(null);
+         window.open(pdf);
         }}>Preview</MenuItem>
         </a>
         <a className='anchortag' href={pdf} download="Parimal_Resume" target='_blank'  rel="noreferrer">
