@@ -57,6 +57,7 @@
    color: #f1d7a3;
     overflow: auto;
     align-items: center;
+    text-align: center;
     justify-content: center;
 }
 .cardDescription

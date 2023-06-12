@@ -10,6 +10,9 @@ const  Projects=  React.forwardRef((props, ref) => {
     <hr className='projecthr' />
     </div>
     <div className='projectsMyDesc'>
+     <Card projectname="MyCafe" url="https://github.com/Parimal-3008/MyCafe-combined" techstack="Flutter Node.js Express.js React.js MongoDB Firebase" 
+     description="A food ordering app that allow users to order food items and trck their orders."
+      />
      <Card projectname="StockX" url="https://github.com/Parimal-3008/StockX" techstack="Node.js Express.js React.js PostgreSQL" 
      description="Playground for newbie stock traders to buy and sell some of the listed stocks at live price."
       />

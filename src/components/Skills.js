@@ -10,6 +10,7 @@ import postgreslogo from "../components/icons/postgres.png"
 import reactlogo from "../components/icons/reactjs.png"
 import expresslogo from "../components/icons/expressjs.png"
 import flutterlogo from "../components/icons/flutter.png"
+import firebase from "../components/icons/firebase.png"
 import dsa from "../components/icons/problem-solving.png"
 import Skillcard from './Skillcard';
 
@@ -32,6 +33,8 @@ const  Skills=  React.forwardRef((props, ref) => {
         <Skillcard  imagelocation={mongologo}  imagename='MongoDB'  />
         <Skillcard  imagelocation={postgreslogo} imagename='PostgreSQL'/>        
         <Skillcard  imagelocation={flutterlogo} imagename='Flutter' />
+        <Skillcard  imagelocation={firebase} imagename='Firebase' />
+        <br></br>
         <Skillcard  imagelocation={dsa} imagename='Data Structure and Algorithms' url={'https://leetcode.com/parimal30/'}/>
 
     </div>
