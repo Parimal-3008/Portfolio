@@ -9,6 +9,9 @@ import Footer from './components/Footer';
 import Work from './components/Work';
 import Education from './components/Education';
 import Skills from './components/Skills';
+import { Routes, Route } from 'react-router-dom';
+import PDFViewer from './components/PDFViewer';
+import Base from './Base';
 function App() {
   const ref1= useRef();
   const ref2= useRef();
@@ -19,40 +22,14 @@ function App() {
   const ref7= useRef();
   const ref8= useRef();
   const ref9= useRef();
+  
   return (
-    <div className="App">
-    <div className='child1'>
-    <Navbar ref1={ref1} ref2={ref2} ref3={ref3} ref4={ref4} ref5={ref5} ref6={ref6} ref7={ref7} ref8={ref8} ref9={ref9} />
-    </div>
-    <div className='child2'>
-      <Intro ref={ref2}/>
-    </div>
-    <div className='child3'>
-     <About ref={ref3} />
-     </div>
-     <div className='child7'>
-      <Work ref={ref4}/>
-     </div>
-     <div className='child7'>
-      <Skills ref={ref5} />
-     </div>
-     <div className='child4'>
-      <Projects ref={ref6}/>
-     </div>
-     <div className='child8'>
-      <Education ref={ref7}/>
-     </div>
-     <div className='child5'>
-      <Contact ref={ref8}/>
-     </div>
-     <div className='child6'>
-      <Footer ref={ref9}/>
-     </div>
     
-     
-     
-
-    </div>
+    <Routes>
+    <Route path="/"  element= {<Base />}/>
+    <Route path="/resume"  element={<PDFViewer />} />
+    </Routes>
+    
   );
 }
 
