@@ -6,7 +6,7 @@ function PDFViewer() {
     
     <div className='pdfparent'>
    
-      <iframe src={pdf} style={{ height: '100%', width: '100%' }}></iframe>
+      <iframe src={`${pdf}#view=fitH`} style={{ height: '100%', width: '100%' }} ></iframe>
     </div>
   )
 }
