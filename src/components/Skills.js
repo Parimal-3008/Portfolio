@@ -29,7 +29,7 @@ const  Skills=  React.forwardRef((props, ref) => {
         <Skillcard imagelocation={javalogo}   imagename='Java'   />
         <Skillcard imagelocation={nodelogo}   imagename='Node.js'   />
         <Skillcard  imagelocation={expresslogo} imagename='Express.js' />
-        <Skillcard  imagelocation={reactlogo}  imagename='React.js'  />
+        <Skillcard  imagelocation={reactlogo}  imagename='React'  />
         <Skillcard  imagelocation={mongologo}  imagename='MongoDB'  />
         <Skillcard  imagelocation={postgreslogo} imagename='PostgreSQL'/>        
         <Skillcard  imagelocation={flutterlogo} imagename='Flutter' />

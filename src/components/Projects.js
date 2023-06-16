@@ -10,16 +10,16 @@ const  Projects=  React.forwardRef((props, ref) => {
     <hr className='projecthr' />
     </div>
     <div className='projectsMyDesc'>
-     <Card projectname="MyCafe" url="https://github.com/Parimal-3008/MyCafe-combined" techstack="Flutter Node.js Express.js React.js MongoDB Firebase" 
+     <Card projectname="MyCafe" url="https://github.com/Parimal-3008/MyCafe-combined" techstack="Flutter Node.js Express.js React MongoDB Firebase" 
      description="A food ordering app that allow users to order food items and track their orders."
       />
-     <Card projectname="StockX" url="https://github.com/Parimal-3008/StockX" techstack="Node.js Express.js React.js PostgreSQL" 
+     <Card projectname="StockX" url="https://github.com/Parimal-3008/StockX" techstack="Node.js Express.js React PostgreSQL" 
      description="Playground for newbie stock traders to buy and sell some of the listed stocks at live price."
       />
      <Card projectname="WeText" url="https://github.com/Parimal-3008/WeText" techstack="Node.js Express.js EJS MongoDB" 
      description="Web application where user can can chat in real time with each other."
       />
-     <Card projectname="Portfolio" url="https://github.com/Parimal-3008/Portfolio" techstack="Node.js React.js" 
+     <Card projectname="Portfolio" url="https://github.com/Parimal-3008/Portfolio" techstack="Node.js React" 
      description="My portfolio website to showcase my skills and projects."
       />
      <Card projectname="Chess Clock" url="https://github.com/Parimal-3008/chess-clock" techstack="HTML CSS Javascript" 
