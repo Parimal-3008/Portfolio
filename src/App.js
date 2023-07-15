@@ -9,6 +9,8 @@ import Footer from './components/Footer';
 import Work from './components/Work';
 import Education from './components/Education';
 import Skills from './components/Skills';
+import { Analytics } from '@vercel/analytics/react';
+
 import { Routes, Route } from 'react-router-dom';
 import PDFViewer from './components/PDFViewer';
 import Base from './Base';
@@ -24,12 +26,13 @@ function App() {
   const ref9= useRef();
   
   return (
-    
+    <>
     <Routes>
     <Route path="/"  element= {<Base />}/>
     <Route path="/resume"  element={<PDFViewer />} />
     </Routes>
-    
+    <Analytics />
+    </>
   );
 }
 
