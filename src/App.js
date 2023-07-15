@@ -1,15 +1,6 @@
 import './App.css';
 import { useRef } from 'react';
-import Navbar from './components/Navbar';
-import About from './components/About';
-import Intro from './components/Intro';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Work from './components/Work';
-import Education from './components/Education';
-import Skills from './components/Skills';
-import { Analytics } from '@vercel/analytics/react';
+
 
 import { Routes, Route } from 'react-router-dom';
 import PDFViewer from './components/PDFViewer';
@@ -31,7 +22,6 @@ function App() {
     <Route path="/"  element= {<Base />}/>
     <Route path="/resume"  element={<PDFViewer />} />
     </Routes>
-    <Analytics />
     </>
   );
 }

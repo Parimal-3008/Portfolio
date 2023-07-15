@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 import Work from './components/Work';
 import Education from './components/Education';
 import Skills from './components/Skills';
-
+import { Analytics } from '@vercel/analytics/react';
 function Base() {
   const ref1= useRef();
   const ref2= useRef();
@@ -24,6 +24,8 @@ function Base() {
   
   return (
     <>
+    
+    <Analytics />
     <div className="App">
     <div className='child1'>
     <Navbar ref1={ref1} ref2={ref2} ref3={ref3} ref4={ref4} ref5={ref5} ref6={ref6} ref7={ref7} ref8={ref8} ref9={ref9} />
@@ -57,7 +59,8 @@ function Base() {
      
 
     </div>
-   
+     
+    <Analytics />
     </>
   );
 }
