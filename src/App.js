@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import PDFViewer from './components/PDFViewer';
 import Base from './Base';
+import { Analytics } from '@vercel/analytics/react';
 function App() {
   const ref1= useRef();
   const ref2= useRef();
@@ -22,6 +23,7 @@ function App() {
     <Route path="/"  element= {<Base />}/>
     <Route path="/resume"  element={<PDFViewer />} />
     </Routes>
+    <Analytics />
     </>
   );
 }
