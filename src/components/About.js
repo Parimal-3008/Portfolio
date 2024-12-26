@@ -1,32 +1,43 @@
-import React from 'react'
-import '../components/css/About.css'
+import React from "react";
+import "../components/css/About.css";
 
-const  About=  React.forwardRef((props, ref) => {
+const About = React.forwardRef((props, ref) => {
   return (
     <div className="parent2" ref={ref}>
-    <div className='name2'>
-    <hr className='projecthr'/>
-    About Me
-    <hr className='projecthr' />
-    </div>
-    <div className='MyDesc'>
-      <p>Hello! I am Parimal.</p>
-      <p>I am an enthusiastic web developer with a passion for creating dynamic and innovative web applications. I graduated from NIT Surat.</p>
-      <p>As a fresh graduate, I have strong understanding of web development principles and technologies. My passion for technology and creativity is reflected in my attention to detail and commitment.
-      I am excited to further develop my skills and bring innovative solutions to future projects.  </p>
-      <p>
-        I have developed some web applications with the help of Reacts.js, Node.js, Express.js, MongoDB, and PostgreSQL.
+      <div className="name2">
+        <hr className="projecthr" />
+        About Me
+        <hr className="projecthr" />
+      </div>
+      <div className="MyDesc">
+        <p>
+          Hello! I am Parimal. I have completed my graduation from NIT Surat in
+          2023.
         </p>
         <p>
-         Solving more than 1500 Data Structures and Algorithms problems on 
-        platforms like leetcode and codeforces helped me in improving my problem-solving skills.
-      </p>
+          I am a Software Development Engineer at Bild, where I have been
+          working on improving existing UIs and developing new ones for both web
+          and desktop applications. I have also contributed to replacing the
+          previous system for managing app data with a simpler and more
+          efficient one. Additionally, I have designed APIs for new features and
+          worked on backend systems to ensure seamless integration with the
+          frontend.
+        </p>
+        <p>
+          During my undergrad, I interned at GE Healthcare, where I gained
+          valuable experience. Additionally, through personal projects, I worked
+          with React.js, Node.js, Express.js, MongoDB, and PostgreSQL. I also
+          improved my problem-solving skills by solving over 1,500 problems on
+          LeetCode and Codeforces.
+        </p>
+        <p>
+          Currently, I am learning how to design scalable systems, working on
+          side projects, and continuously improving my problem-solving skills to
+          further enhance my abilities in software development.
+        </p>
+      </div>
     </div>
-
-
-
-    </div>
-  )
+  );
 });
 
-export default About
+export default About;
