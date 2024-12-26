@@ -45,13 +45,13 @@ const Work = () => {
         <hr className="workhr" id="rightline" />
       </div>
       <div className="workouterdiv">
-        <div>
+        <div className="parentCompanyName">
           {workExperience.map((job, index) => {
             return (
               <div
                 className="workcompanyname"
                 style={{
-                  borderLeft:
+                  borderBottom:
                     selectedIndex === index ? "3px solid #ffc857" : "",
                   color: selectedIndex === index ? "#ffc857" : "",
                 }}
@@ -70,7 +70,7 @@ const Work = () => {
                   <div className="workrole">{job.role}</div>
                   <div className="workduration">{job.duration}</div>
                   <div className="workdescription">
-                    <ul>
+                    <ul style={{ width: "100%" }}>
                       {job.description.map((item) => (
                         <li>{item}</li>
                       ))}
