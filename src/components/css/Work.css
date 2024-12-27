@@ -1,6 +1,6 @@
 .workparent {
   margin-top: 5%;
-  height: 500px;
+  height: auto;
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -32,15 +32,14 @@
 }
 .workouterdiv {
   display: flex;
+  height: auto;
   margin-top: 60px;
   margin-left: 10%;
   margin-right: 10%;
-  height: 80%;
 }
 .workleft {
   width: 20%;
   text-decoration: none;
-  /* border: 2px solid rgb(200, 21, 27); */
   display: flex;
   flex-direction: column;
 }
@@ -65,7 +64,7 @@
   align-items: center;
 }
 .workdescription {
-  height: 80%;
+  height: auto;
   width: 100%;
   font-weight: 500;
   display: flex;
@@ -116,12 +115,12 @@ li {
     border-bottom: 3px solid #ffc857;
     color: #ffc857;
   }
-  .parentCompanyName {
+  /* .parentCompanyName {
     display: flex;
     align-items: center;
     flex-direction: row;
     gap: 6px;
-  }
+  } */
   .workcompanyname {
     font-size: 110%;
     border-left: 0px;
@@ -148,7 +147,7 @@ li {
 
   .workdescription {
     width: 100%;
-    height: 200px;
+    height: auto;
     overflow-y: auto;
     margin-top: 20px;
     /* border: 1px solid red; */
@@ -167,6 +166,7 @@ li {
 
   .workdescription {
     width: 100%;
+    height: auto;
   }
 
   .workrole {
