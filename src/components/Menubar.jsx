@@ -1,11 +1,11 @@
-import * as React from 'react';
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
+import * as React from "react";
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 import "../components/css/Menubar.css";
 import { useState } from "react";
-import pdf from "./Parimal_resume.pdf"
-import { Link } from 'react-router-dom';
+import pdf from "./Parimal_Resume.pdf";
+import { Link } from "react-router-dom";
 export default function Menubar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [isClicked, setIsClicked] = useState(false);
@@ -18,12 +18,12 @@ export default function Menubar() {
   };
 
   return (
-    <div className='Menuparent'>
-      <Button 
+    <div className="Menuparent">
+      <Button
         id="basic-button"
-        aria-controls={open ? 'basic-menu' : undefined}
+        aria-controls={open ? "basic-menu" : undefined}
         aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
+        aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
       >
         Resume
@@ -34,18 +34,30 @@ export default function Menubar() {
         open={open}
         onClose={handleClose}
         MenuListProps={{
-          'aria-labelledby': 'basic-button',
+          "aria-labelledby": "basic-button",
         }}
       >
         {/* <a className='anchortag' target='_blank'  rel="noreferrer"> */}
-        <Link className='anchortag' target='_blank'  rel="noreferrer" to="/resume">
-         <MenuItem onClick={()=>{}}>Preview</MenuItem></Link>
+        <Link
+          className="anchortag"
+          target="_blank"
+          rel="noreferrer"
+          to="/resume"
+        >
+          <MenuItem onClick={() => {}}>Preview</MenuItem>
+        </Link>
         {/* </a> */}
-       
-        <a className='anchortag' href={pdf} download="Parimal_Resume" target='_blank'  rel="noreferrer">
-        <MenuItem onClick={handleClose}>Download</MenuItem></a>
-        </Menu>
-        
+
+        <a
+          className="anchortag"
+          href={pdf}
+          download="Parimal_Resume"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <MenuItem onClick={handleClose}>Download</MenuItem>
+        </a>
+      </Menu>
     </div>
   );
 }
